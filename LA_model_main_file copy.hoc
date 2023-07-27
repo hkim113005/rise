@@ -357,7 +357,7 @@ shock2Idv_file = new File()
 shock2Idv_file.ropen("shock2Idv.txt")
 shock2Idv_rec = new Vector()
 shock2Idv_rec.scanf(shock2Idv_file)	
-
+	/// Change This part? ///
 	////////////// tone&shock2Interneuron_D //////////////
 for p = 0, 7 {
 	m = shock2Idd_rec.x[p] - 1	
@@ -369,6 +369,7 @@ for p = 0, 7 {
 	shock2Icon[m] = new NetCon(shock,shock2Isyn[m], 0.5, Rdm_D, 1)
 	nclist.append(shock2Icon[m])
 }
+/// Change This part? ///
 ///////////// tone to interneurons in the thalamic pathway //////////////////
 for p = 0, 7 {
 	m = tone2Idd_rec.x[p] - 1	
@@ -390,6 +391,7 @@ for p = 0, 7 {
 	nclist.append(tone2Icon[m])
 
 }
+/// Change This part? ///
 ///////////// tone to interneurons in the cortical pathway //////////////////
 for p = 0, 3 {
 	m = tone2Idd2_rec.x[p] - 1	
@@ -410,6 +412,7 @@ for p = 0, 3 {
 	}													
 	nclist.append(tone2Icon[m + 100])
 }
+	/// Change This part? ///
 	////////////// tone&shock2Interneuron_V //////////////
 for p = 0, 7{
 	m = shock2Idv_rec.x[p] - 1	
@@ -421,6 +424,7 @@ for p = 0, 7{
 	shock2Icon[m] = new NetCon(shock, shock2Isyn[m], 0.5, Rdm_V, 1)
 	nclist.append(shock2Icon[m])
 }
+/// Change This part? ///
 ///////////// tone to interneurons in the cortical pathway //////////////////
 for p = 0, 7 {
 	m = tone2Idv_rec.x[p] - 1	
@@ -442,7 +446,7 @@ for p = 0, 7 {
 		
 	nclist.append(tone2Icon[m])	
 }
-
+/// Change This part? ///
 ///////////// tone to interneurons in the thalamic pathway //////////////////
 for p = 0, 3 {
 	m = tone2Idv2_rec.x[p] - 1	
