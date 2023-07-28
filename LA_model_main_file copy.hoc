@@ -52,7 +52,7 @@ for (i = pc.id; i < NCELL; i += pc.nhost) {              // Distribute the cells
 				cell = new Cell_A()
 			} else if (NM_ind == 1) {
 				cell = new Cell_ADA()
-			}else if (NM_ind == 2) {
+			} else if (NM_ind == 2) {
 				cell = new Cell_ANE()
 			} else { 
 				cell = new Cell_ADANE()
