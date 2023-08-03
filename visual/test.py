@@ -5,12 +5,12 @@ import matplotlib.cm as cm
 tstop = 276000
 dt = 0.01
 
-f = open("../data", "r")
+f = open("../data_base2", "r")
 r = f.read().strip().split("\n")
 n_r = [a.split("\t ") for a in r]
 n_r = [[eval(a) / 1000, eval(b)] for a, b in n_r]
 
-x = [[] for i in range(100)]
+x = [[] for i in range(1000)]
 for n in n_r:
     x[n[-1]].append(n[0])
 

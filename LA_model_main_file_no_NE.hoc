@@ -48,35 +48,11 @@ for(i=pc.id;i<NCELL;i+=pc.nhost) {              // Distribute the cells evenly a
 	if (i < 800){								// LAdd cell ratio A:B:C = 6:3:1
 		Cell_type_ind = Cell_type_rec.x[i]	
 		if (Cell_type_ind <= 5){
-			if (NM_ind == 0){
-				cell = new Cell_A()
-			}else if (NM_ind == 1){
-				cell = new Cell_A()
-			}else if (NM_ind == 2){
-				cell = new Cell_A()
-			}else{
-				cell = new Cell_A()
-			}
+			cell = new Cell_A()
 		}else if(Cell_type_ind <= 8){
-			if (NM_ind == 0){
-				cell = new Cell_B()
-			}else if (NM_ind == 1){
-				cell = new Cell_B()
-			}else if (NM_ind == 2){
-				cell = new Cell_B()
-			}else{
-				cell = new Cell_B()
-			}
+			cell = new Cell_B()
 		}else{
-			if (NM_ind == 0){
-				cell = new Cell_C()
-			}else if (NM_ind == 1){
-				cell = new Cell_C()
-			}else if (NM_ind == 2){
-				cell = new Cell_C()
-			}else{
-				cell = new Cell_C()
-			}
+			cell = new Cell_C
 		}
 	}else{
 		cell = new InterneuronCell()            // Create 200 Interneuron cells (cell 800 ~ cell 999) 
