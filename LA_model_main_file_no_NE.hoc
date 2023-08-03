@@ -53,7 +53,7 @@ for(i=pc.id;i<NCELL;i+=pc.nhost) {              // Distribute the cells evenly a
 			}else if (NM_ind == 1){
 				cell = new Cell_ADA()
 			}else if (NM_ind == 2){
-				cell = new Cell_ANE()
+				cell = new Cell_A()
 			}else{
 				cell = new Cell_ADANE()
 			}
@@ -63,7 +63,7 @@ for(i=pc.id;i<NCELL;i+=pc.nhost) {              // Distribute the cells evenly a
 			}else if (NM_ind == 1){
 				cell = new Cell_BDA()
 			}else if (NM_ind == 2){
-				cell = new Cell_BNE()
+				cell = new Cell_B()
 			}else{
 				cell = new Cell_BDANE()
 			}
@@ -73,7 +73,7 @@ for(i=pc.id;i<NCELL;i+=pc.nhost) {              // Distribute the cells evenly a
 			}else if (NM_ind == 1){
 				cell = new Cell_CDA()
 			}else if (NM_ind == 2){
-				cell = new Cell_CNE()
+				cell = new Cell_C()
 			}else{
 				cell = new Cell_CDANE()
 			}
@@ -359,7 +359,7 @@ shock2Idv_rec = new Vector()
 shock2Idv_rec.scanf(shock2Idv_file)	
 
 	////////////// tone&shock2Interneuron_D //////////////
-for p = 0, 74{
+for p = 0, 74 {
 	m = shock2Idd_rec.x[p]-1	
 	Rdm_D = r.discunif(10, 20)						// random number generator for different delay		
     if(!pc.gid_exists(m)) { continue }				// Can't connect to target if it doesn't exist 

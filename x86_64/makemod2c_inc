@@ -1,0 +1,497 @@
+
+./bg2inter.c: ../bg2inter.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) bg2inter.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./bg2inter.o: ./bg2inter.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./bg2pyr.c: ../bg2pyr.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) bg2pyr.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./bg2pyr.o: ./bg2pyr.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./ca.c: ../ca.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ca.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./ca.o: ./ca.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./cadyn.c: ../cadyn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) cadyn.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./cadyn.o: ./cadyn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./cal2.c: ../cal2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) cal2.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./cal2.o: ./cal2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./capool.c: ../capool.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) capool.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./capool.o: ./capool.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./function_TMonitor.c: ../function_TMonitor.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) function_TMonitor.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./function_TMonitor.o: ./function_TMonitor.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./h.c: ../h.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) h.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./h.o: ./h.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./im.c: ../im.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) im.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./im.o: ./im.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./interD2pyrDDANE_STFD.c: ../interD2pyrDDANE_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) interD2pyrDDANE_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./interD2pyrDDANE_STFD.o: ./interD2pyrDDANE_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./interD2pyrDDA_STFD.c: ../interD2pyrDDA_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) interD2pyrDDA_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./interD2pyrDDA_STFD.o: ./interD2pyrDDA_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./interD2pyrDNE_STFD.c: ../interD2pyrDNE_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) interD2pyrDNE_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./interD2pyrDNE_STFD.o: ./interD2pyrDNE_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./interD2pyrD_STFD.c: ../interD2pyrD_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) interD2pyrD_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./interD2pyrD_STFD.o: ./interD2pyrD_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./interD2pyrVDA_STFD.c: ../interD2pyrVDA_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) interD2pyrVDA_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./interD2pyrVDA_STFD.o: ./interD2pyrVDA_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./interD2pyrV_STFD.c: ../interD2pyrV_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) interD2pyrV_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./interD2pyrV_STFD.o: ./interD2pyrV_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./interV2pyrDDANE_STFD.c: ../interV2pyrDDANE_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) interV2pyrDDANE_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./interV2pyrDDANE_STFD.o: ./interV2pyrDDANE_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./interV2pyrDDA_STFD.c: ../interV2pyrDDA_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) interV2pyrDDA_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./interV2pyrDDA_STFD.o: ./interV2pyrDDA_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./interV2pyrDNE_STFD.c: ../interV2pyrDNE_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) interV2pyrDNE_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./interV2pyrDNE_STFD.o: ./interV2pyrDNE_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./interV2pyrD_STFD.c: ../interV2pyrD_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) interV2pyrD_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./interV2pyrD_STFD.o: ./interV2pyrD_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./interV2pyrVDA_STFD.c: ../interV2pyrVDA_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) interV2pyrVDA_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./interV2pyrVDA_STFD.o: ./interV2pyrVDA_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./interV2pyrV_STFD.c: ../interV2pyrV_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) interV2pyrV_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./interV2pyrV_STFD.o: ./interV2pyrV_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kadist.c: ../kadist.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kadist.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./kadist.o: ./kadist.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kaprox.c: ../kaprox.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kaprox.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./kaprox.o: ./kaprox.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kdrca1.c: ../kdrca1.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kdrca1.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./kdrca1.o: ./kdrca1.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kdrca1DA.c: ../kdrca1DA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kdrca1DA.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./kdrca1DA.o: ./kdrca1DA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kdrinter.c: ../kdrinter.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kdrinter.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./kdrinter.o: ./kdrinter.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./leak.c: ../leak.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) leak.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./leak.o: ./leak.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./leakDA.c: ../leakDA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) leakDA.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./leakDA.o: ./leakDA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./leakinter.c: ../leakinter.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) leakinter.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./leakinter.o: ./leakinter.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./na3.c: ../na3.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) na3.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./na3.o: ./na3.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./na3DA.c: ../na3DA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) na3DA.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./na3DA.o: ./na3DA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./nainter.c: ../nainter.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) nainter.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./nainter.o: ./nainter.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./pyrD2interD_STFD.c: ../pyrD2interD_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) pyrD2interD_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./pyrD2interD_STFD.o: ./pyrD2interD_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./pyrD2interV_STFD.c: ../pyrD2interV_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) pyrD2interV_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./pyrD2interV_STFD.o: ./pyrD2interV_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./pyrD2pyrDDA_STFD.c: ../pyrD2pyrDDA_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) pyrD2pyrDDA_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./pyrD2pyrDDA_STFD.o: ./pyrD2pyrDDA_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./pyrD2pyrD_STFD.c: ../pyrD2pyrD_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) pyrD2pyrD_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./pyrD2pyrD_STFD.o: ./pyrD2pyrD_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./pyrD2pyrVDA_STFD.c: ../pyrD2pyrVDA_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) pyrD2pyrVDA_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./pyrD2pyrVDA_STFD.o: ./pyrD2pyrVDA_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./pyrD2pyrV_STFD.c: ../pyrD2pyrV_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) pyrD2pyrV_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./pyrD2pyrV_STFD.o: ./pyrD2pyrV_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./pyrV2interD_STFD.c: ../pyrV2interD_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) pyrV2interD_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./pyrV2interD_STFD.o: ./pyrV2interD_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./pyrV2interV_STFD.c: ../pyrV2interV_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) pyrV2interV_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./pyrV2interV_STFD.o: ./pyrV2interV_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./pyrV2pyrDDA_STFD.c: ../pyrV2pyrDDA_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) pyrV2pyrDDA_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./pyrV2pyrDDA_STFD.o: ./pyrV2pyrDDA_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./pyrV2pyrD_STFD.c: ../pyrV2pyrD_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) pyrV2pyrD_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./pyrV2pyrD_STFD.o: ./pyrV2pyrD_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./pyrV2pyrVDA_STFD.c: ../pyrV2pyrVDA_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) pyrV2pyrVDA_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./pyrV2pyrVDA_STFD.o: ./pyrV2pyrVDA_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./pyrV2pyrV_STFD.c: ../pyrV2pyrV_STFD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) pyrV2pyrV_STFD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./pyrV2pyrV_STFD.o: ./pyrV2pyrV_STFD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./sahp.c: ../sahp.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) sahp.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./sahp.o: ./sahp.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./sahpNE.c: ../sahpNE.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) sahpNE.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./sahpNE.o: ./sahpNE.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./shock2interD.c: ../shock2interD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) shock2interD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./shock2interD.o: ./shock2interD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./shock2interV.c: ../shock2interV.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) shock2interV.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./shock2interV.o: ./shock2interV.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./shock2pyrD.c: ../shock2pyrD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) shock2pyrD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./shock2pyrD.o: ./shock2pyrD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./shock2pyrV.c: ../shock2pyrV.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) shock2pyrV.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./shock2pyrV.o: ./shock2pyrV.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./tone2interD.c: ../tone2interD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) tone2interD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./tone2interD.o: ./tone2interD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./tone2interDNE.c: ../tone2interDNE.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) tone2interDNE.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./tone2interDNE.o: ./tone2interDNE.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./tone2interV.c: ../tone2interV.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) tone2interV.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./tone2interV.o: ./tone2interV.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./tone2interVNE.c: ../tone2interVNE.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) tone2interVNE.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./tone2interVNE.o: ./tone2interVNE.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./tone2pyrD.c: ../tone2pyrD.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) tone2pyrD.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./tone2pyrD.o: ./tone2pyrD.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./tone2pyrDNE.c: ../tone2pyrDNE.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) tone2pyrDNE.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./tone2pyrDNE.o: ./tone2pyrDNE.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./tone2pyrDNE_LAdv.c: ../tone2pyrDNE_LAdv.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) tone2pyrDNE_LAdv.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./tone2pyrDNE_LAdv.o: ./tone2pyrDNE_LAdv.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./tone2pyrD_LAdv.c: ../tone2pyrD_LAdv.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) tone2pyrD_LAdv.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./tone2pyrD_LAdv.o: ./tone2pyrD_LAdv.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./tone2pyrV.c: ../tone2pyrV.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) tone2pyrV.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./tone2pyrV.o: ./tone2pyrV.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./tone2pyrVNE.c: ../tone2pyrVNE.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) tone2pyrVNE.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./tone2pyrVNE.o: ./tone2pyrVNE.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./tone2pyrVNE_LAdd.c: ../tone2pyrVNE_LAdd.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) tone2pyrVNE_LAdd.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./tone2pyrVNE_LAdd.o: ./tone2pyrVNE_LAdd.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./tone2pyrV_LAdd.c: ../tone2pyrV_LAdd.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) tone2pyrV_LAdd.mod -o "/usr4/spclpgm/hkim1130/Desktop/rise/x86_64")
+
+./tone2pyrV_LAdd.o: ./tone2pyrV_LAdd.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
