@@ -17,7 +17,7 @@ TotalCellNum = 1000
 CellNum = 1000
 celsius = 31.0  
 
-tstop = 276000
+tstop = 1000//276000
 {load_file("function_TimeMonitor.hoc")}
 dt = 0.01
 r = new Random()
